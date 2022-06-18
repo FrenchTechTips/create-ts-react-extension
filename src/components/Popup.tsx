@@ -10,14 +10,12 @@ export default class Popup extends Component {
     render() {
         return (
             <Provider store={store} >
-                <BrowserRouter>
-                    <div className="text-white w-full-popup">
-                        <Header />
-                        <div className="p-4 bg-gray-800">
-                            <Footer/>
-                        </div>
+                <div className="text-white w-full-popup">
+                    <Header />
+                    <div className="p-4 bg-gray-800">
+                        <Footer/>
                     </div>
-                </BrowserRouter>
+                </div>
             </Provider>
         );
     }

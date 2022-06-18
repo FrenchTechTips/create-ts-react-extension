@@ -1,34 +1,38 @@
-/* eslint-disable quotes */
-
-
-
 document.body.style.border = '5px solid red';
-let hoverBox = document.createElement('div');
-hoverBox.innerHTML = 'jieorzjfoierhgjiouerjgierjgiergjer';
+console.log('[content.js][INFO] ContentScript Loaded');
 
-document.body.append(hoverBox);
-
+// Fetch message from local extension storage then alert it
 // @ts-ignore
-var storage = browser.storage.local; 
+const storage = browser.storage.local;
 storage.get('options', (res) => {
     alert(res.options.message);
 });
 
-
+/**
+ * Handle a response
+ *
+ * @param message
+ */
 function handleResponse(message) {
-    console.log(`Message from the background script:  ${message.response}`);
-  }
-  
-  function handleError(error) {
-    console.log(`Error: ${error}`);
-  }
-  
-  function notifyBackgroundPage() {
-    // @ts-ignore
-    var sendMessage = browser.runtime.sendMessage({id: 'content_default_response',
-      message: "Greeting from the content script"
-    });
-    sendMessage.then(handleResponse, handleError);
-  }
+    console.log(`[content.js][INFO] ${message}`);
+}
 
-  notifyBackgroundPage();
+/**
+ * Handle an error and log it
+ *
+ * @param error
+ */
+function handleError(error) {
+    console.log(`[content.js][ERROR] ${error}`);
+}
+
+/**
+ * AutoCall function to send message in the runtime then handle the response
+ */
+(() => {
+  // @ts-ignore
+  const sendMessage = browser.runtime.sendMessage({id: 'content_default_response',
+    message: 'Message send by the content script'
+  });
+  sendMessage.then(handleResponse, handleError);
+})();

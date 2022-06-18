@@ -59,17 +59,9 @@ export default env => ({
                     },
                     context: './public',
                     filter: async (path) => {
-                        if (path.match(/\/_locales\/.+/)) {
-
-                        } else {
-                            return true;
-                        }
+                        return true;
                     },
                     transform(content, path) {
-                        if (path.match(/\/_locales\/.+/)) {
-
-                        }
-
                         return content;
                     }
                 }
@@ -81,5 +73,4 @@ export default env => ({
             stream: env.stream
         })
     ],
-
 });

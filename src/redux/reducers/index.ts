@@ -3,5 +3,4 @@ import MessageState from './MessageState';
 
 export default combineReducers({
     MessageState,
-    
 });
