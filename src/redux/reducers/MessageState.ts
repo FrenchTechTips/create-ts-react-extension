@@ -5,7 +5,7 @@ var browser = require('webextension-polyfill');
 var storage = browser.storage.local; 
 
 const initialState: MessageStateType = {
-    message: 'Loading',
+    message: 'Waiting for options to change... ',
 };
 
 export interface MessageStateType {
