@@ -1,7 +1,5 @@
 # create-ts-react-extension
-[![NPM](https://nodei.co/npm/create-ts-react-extension.png)](https://nodei.co/npm/create-ts-react-extension/)
-[![NPM version](https://img.shields.io/npm/v/create-ts-react-extension.svg)](https://www.npmjs.com/create-ts-react-extension)
-[![NPM downloads](https://img.shields.io/npm/dm/create-ts-react-extension.svg?style=flat-square)](https://www.npmjs.com/package/create-ts-react-extension)
+
 # React & Redux & Tailwind bundle Web Extension Template  
 <img alt="Logo" align="right" src="https://create-react-app.dev/img/logo.svg" width="20%" />
 
@@ -26,6 +24,7 @@ If you have questions or need help, please ask in [GitHub Discussions](https://g
 ```sh
 npx create-ts-react-extension my-app
 cd my-app
+npm install
 npm run build
 npm run web-run:firefox
 ```
@@ -43,12 +42,12 @@ You **don’t** need to install or configure tools like webpack or Babel.<br>
 You **can** modify your prefered manifest config
 ```
 ├── manifest
-│   ├── beta-manifest-extra.json
-│   ├── chrome-manifest-extra.json
-│   ├── firefox-beta-manifest-extra.json
-│   ├── firefox-manifest-extra.json
-│   ├── manifest.json
-│   └── safari-manifest-extra.json
+│   ├── beta-manifest-extra.json
+│   ├── chrome-manifest-extra.json
+│   ├── firefox-beta-manifest-extra.json
+│   ├── firefox-manifest-extra.json
+│   ├── manifest.json
+│   └── safari-manifest-extra.json
 ...
 ```
 
@@ -71,7 +70,7 @@ _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7
 ### npm
 
 ```sh
-npm init create-ts-react-extension my-app 
+npm init ts-react-extension my-app
 ```
 
 _`npm init <initializer>` is available in npm 6+_
@@ -79,7 +78,7 @@ _`npm init <initializer>` is available in npm 6+_
 ### Yarn
 
 ```sh
-yarn create create-ts-react-extension my-app 
+yarn create create-ts-react-extension my-app
 ```
 
 _[`yarn create <starter-kit-package>`](https://yarnpkg.com/lang/en/docs/cli/create/) is available in Yarn 0.25+_
@@ -91,81 +90,81 @@ Inside that directory, it will generate the initial project structure and instal
 my-app
 .
 ├── dist
-│   ├── assets
-│   │   └── icons
-│   │       ├── bmac2.png
-│   │       ├── bmac.png
-│   │       ├── github.png
-│   │       └── ytb.png
-│   ├── css
-│   │   └── style.css
-│   ├── js
-│   │   ├── background.js
-│   │   ├── browser-polyfill.js
-│   │   ├── content.js
-│   │   ├── options.js
-│   │   ├── popup.js
-│   │   └── vendor.js
-│   ├── logo192.png
-│   ├── logo512.png
-│   ├── manifest.json
-│   ├── options
-│   │   └── options.html
-│   └── popup.html
+│   ├── assets
+│   │   └── icons
+│   │       ├── bmac2.png
+│   │       ├── bmac.png
+│   │       ├── github.png
+│   │       └── ytb.png
+│   ├── css
+│   │   └── style.css
+│   ├── js
+│   │   ├── background.js
+│   │   ├── browser-polyfill.js
+│   │   ├── content.js
+│   │   ├── options.js
+│   │   ├── popup.js
+│   │   └── vendor.js
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   ├── options
+│   │   └── options.html
+│   └── popup.html
 ├── manifest
-│   ├── beta-manifest-extra.json
-│   ├── chrome-manifest-extra.json
-│   ├── firefox-beta-manifest-extra.json
-│   ├── firefox-manifest-extra.json
-│   ├── manifest.json
-│   └── safari-manifest-extra.json
+│   ├── beta-manifest-extra.json
+│   ├── chrome-manifest-extra.json
+│   ├── firefox-beta-manifest-extra.json
+│   ├── firefox-manifest-extra.json
+│   ├── manifest.json
+│   └── safari-manifest-extra.json
 ├── package.json
 ├── package-lock.json
 ├── public
-│   ├── assets
-│   │   └── icons
-│   │       ├── bmac2.png
-│   │       ├── bmac.png
-│   │       ├── github.png
-│   │       └── ytb.png
-│   ├── css
-│   │   └── style.css
-│   ├── logo192.png
-│   ├── logo512.png
-│   ├── options
-│   │   └── options.html
-│   └── popup.html
+│   ├── assets
+│   │   └── icons
+│   │       ├── bmac2.png
+│   │       ├── bmac.png
+│   │       ├── github.png
+│   │       └── ytb.png
+│   ├── css
+│   │   └── style.css
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── options
+│   │   └── options.html
+│   └── popup.html
 ├── README.md
 ├── src
-│   ├── background.ts
-│   ├── components
-│   │   ├── options
-│   │   │   ├── Footer.tsx
-│   │   │   └── Options.tsx
-│   │   ├── popup
-│   │   │   ├── Footer.tsx
-│   │   │   └── Header.tsx
-│   │   └── Popup.tsx
-│   ├── content-script.ts
-│   ├── css
-│   │   └── index.css
-│   ├── options.ts
-│   ├── popup.ts
-│   ├── react-app-env.d.ts
-│   ├── redux
-│   │   ├── Actions.ts
-│   │   ├── ActionsTypes.ts
-│   │   ├── reducers
-│   │   │   ├── index.ts
-│   │   │   └── MessageState.ts
-│   │   └── store.ts
-│   ├── render
-│   │   ├── OptionsRenderer.tsx
-│   │   └── PopupRenderer.tsx
-│   ├── serviceWorker.ts
-│   ├── types.ts
-│   └── utils
-│       └── utils.ts
+│   ├── background.ts
+│   ├── components
+│   │   ├── options
+│   │   │   ├── Footer.tsx
+│   │   │   └── Options.tsx
+│   │   ├── popup
+│   │   │   ├── Footer.tsx
+│   │   │   └── Header.tsx
+│   │   └── Popup.tsx
+│   ├── content-script.ts
+│   ├── css
+│   │   └── index.css
+│   ├── options.ts
+│   ├── popup.ts
+│   ├── react-app-env.d.ts
+│   ├── redux
+│   │   ├── Actions.ts
+│   │   ├── ActionsTypes.ts
+│   │   ├── reducers
+│   │   │   ├── index.ts
+│   │   │   └── MessageState.ts
+│   │   └── store.ts
+│   ├── render
+│   │   ├── OptionsRenderer.tsx
+│   │   └── PopupRenderer.tsx
+│   ├── serviceWorker.ts
+│   ├── types.ts
+│   └── utils
+│       └── utils.ts
 ├── tailwind.config.cjs
 ├── tsconfig.json
 └── webpack
