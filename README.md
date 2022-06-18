@@ -1,5 +1,7 @@
 # create-ts-react-extension
-
+[![NPM](https://nodei.co/npm/create-ts-react-extension.png)](https://nodei.co/npm/create-ts-react-extension/)
+[![NPM version](https://img.shields.io/npm/v/create-ts-react-extension.svg)](https://www.npmjs.com/create-ts-react-extension)
+[![NPM downloads](https://img.shields.io/npm/dm/create-ts-react-extension.svg?style=flat-square)](https://www.npmjs.com/package/create-ts-react-extension)
 # React & Redux & Tailwind bundle Web Extension Template  
 <img alt="Logo" align="right" src="https://create-react-app.dev/img/logo.svg" width="20%" />
 
@@ -69,7 +71,7 @@ _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7
 ### npm
 
 ```sh
-npm init create-ts-react-extension my-app my-app
+npm init create-ts-react-extension my-app 
 ```
 
 _`npm init <initializer>` is available in npm 6+_
@@ -77,7 +79,7 @@ _`npm init <initializer>` is available in npm 6+_
 ### Yarn
 
 ```sh
-yarn create create-ts-react-extension my-app my-app
+yarn create create-ts-react-extension my-app 
 ```
 
 _[`yarn create <starter-kit-package>`](https://yarnpkg.com/lang/en/docs/cli/create/) is available in Yarn 0.25+_
