@@ -1,0 +1,65 @@
+{
+  "manifest_version": 2,
+  "name": "RandomPuppet",
+  "short_name": "RandomPuppet",
+  "version": "1.0.0",
+  "description": "RandomPuppet, auto fake filer. Extension made with React.",
+  "icons": {
+    "192": "./assets/images/logo192.png",
+    "512": "./assets/images/logo512.png"
+  },
+  "web_accessible_resources":[
+    "popup.html"
+  ],
+  "commands": {
+    "_execute_browser_action": {},
+    "launch-element-picker": {
+      "description": "__MSG_popupTipPicker__"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["./js/browser-polyfill.js"]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "./js/browser-polyfill.js",
+      "./js/vendor.js",
+      "./js/background.js"
+    ]
+  },
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "clipboardWrite",
+    "nativeMessaging",
+    "notifications",
+    "storage",
+    "tabs",
+    "webNavigation",
+    "webRequest",
+    "webRequestBlocking",
+    "https://*/*",
+    "http://*/*",
+    "https://api.github.com/"
+  ],
+
+  "browser_action": {
+    "default_icon": "./assets/images/logo192.png",
+    "default_title": "RandomPuppet",
+    "default_popup": "./popup.html"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "borderify@example.com"
+    }
+  }
+  
+
+}
