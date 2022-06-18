@@ -1,4 +1,4 @@
-# Create-react-extension-ts
+# create-ts-react-extension
 
 # React & Redux & Tailwind bundle Web Extension Template  
 <img alt="Logo" align="right" src="https://create-react-app.dev/img/logo.svg" width="20%" />
@@ -6,11 +6,11 @@
 Create React & Redux & Tailwind bundle Web Extension Template with no config.
 
 - [Creating an App](#creating-an-app) – How to create a new app.
-- [User Guide](https://FrenchTechTips.github.io/create-react-extension-ts/) – How to develop apps bootstrapped with Create React App.
+- [User Guide](https://FrenchTechTips.github.io/create-react-extension/) – How to develop apps bootstrapped with Create React App.
 
-Create-react-extension-ts works on Firefox, Chrome.<br>
+create-ts-react-extension works on Firefox, Chrome.<br>
 If something doesn’t work, please [file an issue](https://github.com/FrenchTechTips/create-react-extension/issues/new).<br>
-If you have questions or need help, please ask in [GitHub Discussions](https://github.com/FrenchTechTips/create-react-extension-ts/discussions).
+If you have questions or need help, please ask in [GitHub Discussions](https://github.com/FrenchTechTips/create-react-extension/discussions).
 
 
 ## Authors
@@ -22,7 +22,7 @@ If you have questions or need help, please ask in [GitHub Discussions](https://g
 ## Quick Overview
 
 ```sh
-npx create-react-extension-ts my-app
+npx create-ts-react-extension my-app
 cd my-app
 npm run build
 npm run web-run:firefox
@@ -61,7 +61,7 @@ To create a new app, you may choose one of the following methods:
 ### npx
 
 ```sh
-npx create-react-extension-ts my-app
+npx create-ts-react-extension my-app
 ```
 
 _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) is a package runner tool that comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
@@ -69,7 +69,7 @@ _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7
 ### npm
 
 ```sh
-npm init create-react-extension-ts my-app my-app
+npm init create-ts-react-extension my-app my-app
 ```
 
 _`npm init <initializer>` is available in npm 6+_
@@ -77,7 +77,7 @@ _`npm init <initializer>` is available in npm 6+_
 ### Yarn
 
 ```sh
-yarn create create-react-extension-ts my-app my-app
+yarn create create-ts-react-extension my-app my-app
 ```
 
 _[`yarn create <starter-kit-package>`](https://yarnpkg.com/lang/en/docs/cli/create/) is available in Yarn 0.25+_
@@ -224,16 +224,16 @@ Your environment will have everything you need to build a modern single-page Rea
 
 Check out [this guide](https://github.com/nitishdayal/cra_closer_look) for an overview of how these tools fit together.
 
-The tradeoff is that **these tools are preconfigured to work in a specific way**. If your project needs more customization, you can ["eject"](https://FrenchTechTips.github.io/create-react-extension-ts/docs/available-scripts#npm-run-eject) and customize it, but then you will need to maintain this configuration.
+The tradeoff is that **these tools are preconfigured to work in a specific way**. If your project needs more customization, you can ["eject"](https://FrenchTechTips.github.io/create-ts-react-extension/docs/available-scripts#npm-run-eject) and customize it, but then you will need to maintain this configuration.
 
 
 ## Contributing
 
-We'd love to have your helping hand on `create-react-extension-ts`! See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
+We'd love to have your helping hand on `create-ts-react-extension`! See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
 
 ## Supporting Create React App
 
-Create React App is a community maintained project and all contributors are volunteers. If you'd like to support the future development of Create React App then please consider donating to our [Open Collective](https://opencollective.com/create-react-extension-ts).
+Create React App is a community maintained project and all contributors are volunteers. If you'd like to support the future development of Create React App then please consider donating to our [Open Collective](https://opencollective.com/create-ts-react-extension).
 
 
 
@@ -242,4 +242,4 @@ Create React App is a community maintained project and all contributors are volu
 
 ## License
 
-Create React App is open source software [licensed as MIT](https://github.com/FrenchTechTips/create-react-extension-ts/blob/main/LICENSE). The Create React App logo is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+Create React App is open source software [licensed as MIT](https://github.com/FrenchTechTips/create-ts-react-extension/blob/main/LICENSE). The Create React App logo is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
