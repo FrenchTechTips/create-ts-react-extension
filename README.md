@@ -1,5 +1,8 @@
 # create-ts-react-extension
 
+[![NPM](https://nodei.co/npm/create-ts-react-extension.png)](https://nodei.co/npm/create-ts-react-extension/)
+[![NPM version](https://img.shields.io/npm/v/create-ts-react-extension.svg)](https://www.npmjs.com/create-ts-react-extension)
+[![NPM downloads](https://img.shields.io/npm/dm/create-ts-react-extension.svg?style=flat-square)](https://www.npmjs.com/package/create-ts-react-extension)
 # React & Redux & Tailwind bundle Web Extension Template  
 <img alt="Logo" align="right" src="https://create-react-app.dev/img/logo.svg" width="20%" />
 
