@@ -9,7 +9,6 @@
 Create React & Redux & Tailwind bundle Web Extension Template with no config.
 
 - [Creating an App](#creating-an-app) – How to create a new app.
-- [User Guide](https://FrenchTechTips.github.io/create-react-extension/) – How to develop apps bootstrapped with Create React App.
 
 create-ts-react-extension works on Firefox, Chrome.<br>
 If something doesn’t work, please [file an issue](https://github.com/FrenchTechTips/create-react-extension/issues/new).<br>
